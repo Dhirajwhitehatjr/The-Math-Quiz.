@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <script src="quiz.js"></script>
+        <div style="background-color: thistle; width: 150px; padding-left: 30px;">
+        <h3 id="Player1_name_h4" style="font-size: 30px; color:yellow;"></h3>
+        <h2 id="score_1" style="color: tomato;"></h2>
+    </div>
+    <div style="background-color: thistle; width: 150px; padding-left: 30px;">
+        <h3 id="Player2_name_h4" style="font-size: 30px; color:yellow;"></h3>
+        <h2 id="score_2" style="color: tomato;"></h2>
+    </div>
+
+        <center>
+            <header style="font-size: 80px;">The Math quiz</header>
+        </center>
+    </head>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <body style="background-color: blue; scroll-behavior: auto;">
+      <div style="background-color: violet; width: 50%; margin-left: 25%; height: 30%; padding-top: 5%; padding-bottom: 5%;">
+        <div>
+           <label style="font-size: 45px; margin-left: 10%;">Question turn : </label>
+           <label id="Question_name" style="font-size: 30px; margin-left: 10%;"></label>
+        </div>
+        <div style="margin-top: 100px;">
+           <label style="font-size: 45px; margin-left: 10%; ">Answer turn : </label>
+           <label id="Question_name" style="font-size: 30px; margin-left: 10%;"></label>
+        </div>
+      </div>
+      <div id = "question_div" style="background-color:gold ; width: 45%; margin-left: 27%; margin-top: 100px; padding-top: 5%; padding-bottom: 5%;">
+    <label id="question" style="font-size: xx-large; color: yellowgreen; margin-left: 50px;"></label>
+    <br>
+    <label style="margin-left: 30px; font-size: 35px;">Answer : </label>
+    <input id="Answer1" type="number" style="margin-top: 60px; margin-left: 100px; width: 280px; height: 60px;" placeholder="Enter your answer">
+    <br>
+    <br>
+    <button id="checkAnswer" onclick="check()" style="width: 70px; height: 50px; background-color: greenyellow; margin-left: 70px;">Check</button>
+    </div>
+    <center style="margin-top: 90px;">
+        <label style="font-size: 40px;">Number 1</label>
+        <br>
+        <br>
+        <br>
+        <input id = "Number1" placeholder="Write Number 1" style="width: 80%; height: 40px;">
+        <br>
+        <br>
+        <br>
+        <label style="font-size: 40px;">Number 2</label>
+        <br>
+        <br>
+        <br>
+        <input id = "Number2" placeholder="Write Number 2" style="width: 80%; height: 40px;">
+        <br>
+        <br>
+        <br>
+        <button id="send" onclick="send()" style="background-color: lightgreen; color: white; width: 150px; height: 60px; font-size: 25px;">Send</button>
+    </center>
+    </body>
+</html>
